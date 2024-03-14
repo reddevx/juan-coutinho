@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portifólio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Estilos básicos para o efeito de máquina digitando */
+
+        .typing-animation {
+            padding-top: 100px;
+            border-right: .2em solid rgb(255, 255, 255);
+            /* Efeito do cursor */
+            overflow: hidden;
+            /* Esconde o texto além da largura do contêiner */
+            animation: typing 3s steps(20, end), blink-caret .75s step-end infinite;
+            /* Animação */
+        }
+
+        @keyframes typing {
+            from {
+                width: 0
+            }
+
+            to {
+                width: 50%
+            }
+        }
+
+        @keyframes blink-caret {
+
+            from,
+            to {
+                border-color: transparent
+            }
+
+            50% {
+                border-color: rgb(255, 255, 255)
+            }
+        }
+
+        #animacao {
+            padding-top: 150px;
+            font-size: 70px;
+        }
+    </style>
+</head>
+
+<body class="bg-black">
+    <main class="container p-1">
+
+        <section id="home" class="container fade-in">
+
+            <nav class="navbar navbar-expand-lg p-2 bg-black">
+                <div class="container-fluid">
+                    <a class="navbar-brand text-white" href="index.html">Dev.</a>
+                    <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active text-white" aria-current="page" href="about-me.html">Sobre
+                                    Mim</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="habilities.html">Habilidades</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" id="btn_animation" href="exp.html">Experiência</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link text-white" id="btn_animation" href="projetos.html">Projetos</a>
+                            </li>
+                        </ul>
+                        <form class="d-flex" role="search">
+                            <a class="nav-link text-white" id="btn_animation" target="_blank" href="mailto:desenvolvedor.juan.business@gmail.com
+              ">
+                                <i class="bi bi-envelope-at-fill text-white p-2 h3"></i>
+                            </a>
+
+
+                            <a class="nav-link text-white" id="btn_animation" target="_blank"
+                                href="https://github.com/DevJuanzok4">
+                                <i class="bi bi-github text-white p-2 h3"></i>
+                            </a>
+
+                            <a class="nav-link text-white" id="btn_animation" target="_blank"
+                                href="https://www.linkedin.com/in/juancoutinho/">
+                                <i class="bi bi-linkedin text-white p-2 h3"></i>
+
+                            </a>
+
+                        </form>
+                    </div>
+                </div>
+            </nav>
+
+
+            <section class="container">
+                <h1 class="p-4 text-white fade-in">Sobre Mim</h1>
+                <p class="p-2 text-lead text-light">Olá, sou desenvolvedor fullstack com experiencia em Ruby, PHP,
+                    Javascript e
+                    Banco de Dados e linguagens de marcação como Html e Css, atualmente trabalho em projetos próprios
+                    utilizando PHP com servidor de Banco de Dados em SQL e Ruby, e estou a procura de uma oportunidade
+                    no mercado de trabalho para ter uma experiencia real.</p>
+                <div class="container">
+                    <div class="row">
+                    
+                            <h4 class="p-2 fade-in text-light">Informações de Contato</h4>
+
+                            <p class="text-light">Email: desenvolvedor.juan.business@gmail.com</p>
+                            <p class="text-light">Telefone: (13) 99683-2181</p>
+                        </div>
+                        <a href="https://api.whatsapp.com/send?phone=5513996832181&text=Ol%C3%A1!%20Vim%20do%20site%20de%20Portifólio."
+                            target="_blank" id="whatsapp-button">
+                            <i class="bi bi-whatsapp text-white" style="font-size: 3rem;"></i>
+                        </a>
+                        <h1 class="text-center text-success h1">:)</h1>
+            </section>
+</body>
+
+</html>

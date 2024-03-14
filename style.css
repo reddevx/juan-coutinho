@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap');
+
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css");
+
+html,
+body {
+    font-family: 'Hammersmith One', sans-serif;
+}
+
+/* Estilização para webkit (Chrome, Safari, Opera) */
+::-webkit-scrollbar {
+    width: 12px;
+    /* largura da barra de rolagem */
+}
+
+::-webkit-scrollbar-track {
+    background: #000000;
+    /* cor de fundo da trilha */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #ffffff;
+    /* cor da barra de rolagem */
+    border-radius: 6px;
+    /* borda arredondada */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+    /* cor da barra de rolagem ao passar o mouse */
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fadeInAnimation 0.6s ease-in forwards;
+}
+
+@keyframes fadeInAnimation {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Estilos para o modo claro */
+body {
+    background-color: #000000; /* Cor de fundo branca */
+    color: #ffffff; /* Cor do texto preto */
+}
+
+/* Estilos para o modo escuro */
+.dark-mode {
+    background-color: #ffffff; /* Cor de fundo escura */
+    color: #000000; /* Cor do texto branca */
+}
